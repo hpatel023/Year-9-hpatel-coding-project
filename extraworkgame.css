@@ -1,0 +1,19 @@
+.button1 {background-color: dodgerblue;} /* up */
+.button2 {background-color: dodgerblue;} /* left */
+.button3 {background-color: dodgerblue;} /* right */
+.button4 {background-color: dodgerblue; } /* down */
+
+.button1 {font-size: 12px;}
+.button2 {font-size: 12px;}
+.button3 {font-size: 12px;}
+.button4 {font-size: 12px;}
+
+.button1 {padding: 10px 24px;}
+.button2 {padding: 10px 24px;}
+.button3 {padding: 10px 24px;}
+.button4 {padding: 10px 24px;}
+
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 12px;}
+.button3 {border-radius: 12px;}
+.button4 {border-radius: 12px;}
