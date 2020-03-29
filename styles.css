@@ -56,7 +56,7 @@ h1 {
   padding: 18px 36px;
   border-top: none;
 }
-/* ----------------------- Card content --------------------------------*/
+/* ----------------------- Flip-Card content --------------------------------*/
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -112,32 +112,6 @@ h1 {
   display: table;
   clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------------- Responsive Website Footer content --------------------------------*/
 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
@@ -566,4 +540,87 @@ footer{
 	font-weight: bold;
 	text-decoration: underline;
 	font-style: normal;
+}
+/* ----------------------- Fish infographic Form content --------------------------------*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* ----------------------- Game Form content --------------------------------*/
+
+.button1 {background-color: dodgerblue;} /* up */
+.button2 {background-color: dodgerblue;} /* left */
+.button3 {background-color: dodgerblue;} /* right */
+.button4 {background-color: dodgerblue; } /* down */
+
+.button1 {font-size: 12px;}
+.button2 {font-size: 12px;}
+.button3 {font-size: 12px;}
+.button4 {font-size: 12px;}
+
+.button1 {padding: 10px 24px;}
+.button2 {padding: 10px 24px;}
+.button3 {padding: 10px 24px;}
+.button4 {padding: 10px 24px;}
+
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 12px;}
+.button3 {border-radius: 12px;}
+.button4 {border-radius: 12px;}
+/* ----------------------- Standard cards content --------------------------------*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 700px;
+  height: 500px;
+  border: 50px transparent;
+  perspective: 500px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: cornflowerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0, 10px;
+}
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -1px;}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
